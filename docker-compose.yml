@@ -1,0 +1,8 @@
+services:
+  whisper-transcriber:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    container_name: meeting-transcriber-whisper-transcriber
+    tty: true
